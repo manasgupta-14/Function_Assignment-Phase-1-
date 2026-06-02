@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function onlyOne(fn){
+            let data=false;
+            return function(){
+                if(data===false){
+                    console.log("Hello",fn);
+                    data=true;
+                }
+            }
+        }
+
+        let greet=onlyOne("Manas");
+        
+        greet();
+        greet();
+        greet();
+    </script>
+</body>
+</html>
