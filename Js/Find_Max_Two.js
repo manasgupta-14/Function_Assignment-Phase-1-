@@ -1,13 +1,13 @@
-function checkNum(num, callback) {
-    callback(num);
+function checkNum(num1,num2, callback) {
+    callback(num1,num2);
 }
 
-checkNum(10, (a) => {
-    if (a > 0) {
-        console.log("Positive Number");
-    } else if (a === 0) {
-        console.log("Zero");
+checkNum(100,30, (a,b) => {
+    if (a > b) {
+        console.log("Number 1 is Greater than Number 2");
+    } else if (a< b) {
+        console.log("Number 2 is Greater than Number 1");
     } else {
-        console.log("Negative Number");
+        console.log("Numbers are equal");
     }
 });
