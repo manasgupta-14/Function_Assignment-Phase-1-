@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document- Permanently_BoundFunction.html</title>
+</head>
+
+<body>
+    <script>
+        let bindFn = {
+            name: "Manas",
+            greet() {
+                console.log("Hello", this.name);
+            }
+        }
+
+        let bound = bindFn.greet.bind(bindFn);
+        bound();
+
+        const another = bound;
+        another();
+    </script>
+</body>
+
+</html>
