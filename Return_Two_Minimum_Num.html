@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fun=((a,b)=>{
+            return function(){
+                return a>b?'Second Number is Minimum':'First Number is Minimum';
+            }
+        })
+
+        let res=fun(20,100);
+        console.log(res());
+    </script>
+</body>
+</html>
