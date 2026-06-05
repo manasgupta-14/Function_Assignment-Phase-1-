@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maximumNum(arr){
+            let max=0;
+            arr.forEach(element => {
+                if(max<element){
+                    max=element
+                }
+            });
+            console.log(max);
+        }
+        
+        maximumNum([10,90,50,40]);
+    </script>
+</body>
+</html>
